@@ -1,0 +1,46 @@
+/* popup image area are */
+.container{
+    position: relative;
+    min-height: 50%;
+    background-color: #ddd;
+}
+.container .popup-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+ .container .popup-image span{
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    font-size: 40px ;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+    user-select: none;
+} 
+
+.container .popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    border: 2px solid #fff;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain ;
+}
+
+
+@media(max-width:768px){
+    .container .popup-image img{
+        width: 320px;
+        left: 147px;
+    }
+}

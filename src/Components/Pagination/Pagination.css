@@ -1,0 +1,44 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 3px;
+}
+
+.pagination div{
+    padding: 10px;
+    border: 1px solid #d5d0d0;
+    height: 40px;
+    width: 40px;
+    border-radius:100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0298cf;
+    color: #ffffff;
+     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+     margin: 0 5px;
+     cursor: pointer;
+}
+.active{
+    background-color:rgb(98, 98, 254);
+}
+@media screen and(min-width:393px) {
+    .pagination{
+        font-size: 24px;
+        margin-top: 150px;
+    }
+}
+@media screen and(min-width:360px) {
+    .pagination{
+        font-size: 24px;
+        margin-top: 150px;
+    }
+}
+@media screen and(min-width:414px) {
+    .pagination{
+        font-size: 24px;
+        margin-top: 194px;
+    }
+}
